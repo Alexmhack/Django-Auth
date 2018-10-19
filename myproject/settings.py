@@ -44,7 +44,8 @@ INSTALLED_APPS = [
     'allauth',
     'allauth.account',
     'allauth.socialaccount',
-    'allauth.socialaccount.providers.github',
+    'allauth.socialaccount.providers.github',   # <- github oauth
+    'allauth.socialaccount.providers.google',   # <- google oauth
 ]
 
 MIDDLEWARE = [

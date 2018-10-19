@@ -19,7 +19,9 @@
 		{% if user.is_authenticated %}
 			<p>Welcome {{ user.username }} !!!</p>
 		{% else %}
-		<a type="button" href="{% provider_login_url 'github' %}" class="mt-3 btn btn-primary btn-lg">Sign Up</a>
+		<a type="button" href="{% provider_login_url 'github' %}" class="mt-3 btn btn-primary btn-lg">Sign up using Github</a>
+
+    <a type="button" href="{% provider_login_url 'google' %}" class="ml-2 mt-3 btn btn-primary btn-lg">Sign up using Google</a>
 		{% endif %}
 	</div>
 
